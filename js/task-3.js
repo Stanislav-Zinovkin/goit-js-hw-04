@@ -11,8 +11,14 @@ const profile = {
   },
 
   getInfo() {
-    return `${this.username} has ${this.playTime} aactive hours!`;
+    return `${this.username} has ${this.playTime} active hours!`;
   },
 };
 
+console.log(profile.getInfo());
+
+profile.changeUsername("Marco");
+console.log(profile.getInfo());
+
+profile.updatePlayTime(20);
 console.log(profile.getInfo());
